@@ -44,7 +44,7 @@ while True:
         choice = input("\nInvalid key, do you want to continue? Type \033[32mY\033[0m if yes "
                        "or \033[31mN\033[0m if no: ")
         if choice.upper() == "Y":
-            cipher(input("Enter the message: ").upper(), input("Enter the key: ").upper())
+            cipher(input("Enter the message: ").upper().replace(" ", ""), input("Enter the key: ").upper().replace(" ", ""))
         elif choice.upper() == "N":
             print("Exiting program\U0001F44B...")
             quit()
